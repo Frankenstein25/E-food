@@ -1,0 +1,213 @@
+body{
+    background:#002244;
+    overflow-x: hidden;
+}
+
+/* Navbar and Footer */
+.logo{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+}
+.nbo{
+    margin-right:1vw;
+} 
+.nb{
+    position: absolute;
+    right:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7)!important;
+    z-index:100;
+    font-size:18px;
+    color:white;
+}
+.nbt{
+    background-color: rgba(0,0,0,0.7)!important;
+    font-size:18px;
+    color:white;
+}
+.title{
+    font-size:28px !important;
+    position: relative;
+    font-family:Roboto;
+    color:white;
+    text-decoration: none;
+    left:41%;
+}
+a.abs{
+    text-decoration: none;
+    color:orange;
+    font-size:18px;
+    font-family:Roboto;
+}
+a.ft{
+    color:white;
+    text-decoration:none;
+    outline: none;
+}
+.nt{
+    font-size:18px;
+}
+
+/* Food Carousel */
+
+.carousel{
+    top:30%;
+    height:25vw;
+    width:50vw;
+    left:82%;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.carousel img{
+    height:25vw;
+    width:50vw;
+    border-radius: 5px;
+}
+h5{
+    color:white;
+    font-weight: bolder;
+    font-size:25px;
+   
+}
+p{
+    color:white;
+    font-weight:bolder;
+}
+
+/* Carousel side cards */
+.lcard{
+    position: absolute;
+    top:30%;
+    left:17%;
+    height:25vw;
+    width:18vw;
+    border:1px solid black;
+    border-top-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius:25px;
+    background-color: white;
+    box-shadow: 4px 8px 4px 1px black;
+}
+.lcard img{
+    height:25vw;
+    width:18vw;
+    border-top-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius:25px;
+}
+.lcard:hover{
+    transform: scale(1.03);
+    transition: 0.25s ease-in-out;
+}
+.rcard{
+    position: absolute;
+    top: 30%;
+    right:-50%;
+    height:25vw;
+    width:18vw;
+    border: 1px solid black;
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius:25px;
+    background-color: white;
+    box-shadow: 4px 8px 4px 1px black;
+}
+.rcard img{
+    height:25vw;
+    width:18vw;
+    border-top-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius:25px;
+}
+.rcard:hover{
+    transform: scale(1.03);
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Media Query */
+
+@media (max-width:425px){
+
+    .logo{
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+    }
+    .nb{
+        background-color: #000 !important;
+        opacity: 1;
+        font-size:18px;
+        z-index:10000 !important;
+    }
+    .nbt{
+        background-color: #000 !important;
+        opacity:1;
+        font-size:18px;
+        z-index:10000 !important;
+        bottom:0;
+    }
+    .nt{
+        font-size: 14px;
+    }
+    a.abs{
+        font-size:14px;
+    }
+    .title{
+        position: relative;
+        left:1vw;
+        font-size: 25px;
+    }
+    .ico{
+        font-size:18px;
+    }
+    .sign{
+        position: relative;
+        margin-top:7vw;
+        margin-right:2vw;
+        font-size: 14px;
+    }
+    .pad{
+        padding:20%;
+    }
+}
+
+@media(max-width:385px){
+    .nt{
+        font-size:11.7px;
+        margin-left:2vw;
+    }
+    a.abs{
+        font-size:11.7px;
+    }
+}
+
+
+@media(max-width:365px){
+    .nt{
+        font-size:12px;
+        margin-left:2vw;
+    }
+    a.abs{
+        font-size:12px;
+    }
+}
+@media(max-width:325px){
+    a.title{
+        font-size:10px;
+    }
+}
+@media(max-width:335px){
+    .nt{
+        font-size:10.5px;
+        margin-left:2vw;
+    }
+    a.abs{
+        font-size:10.5px;
+    }
+}

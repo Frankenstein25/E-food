@@ -1,0 +1,69 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title> Sign Up </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <link rel="stylesheet" type="text/css" href="https://fontawesome.com/v4.7.0/icon/times">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right nb">
+        <img class="logo justify-content-right align-items-right" src="log.jpeg">
+        <h3 class="title">FoodieMoodie</h3>
+        <button class="navbar-toggler navbar-dark justify-content-end " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-end align-items-right">
+            <a class="nav-link active nbo" href="Home.html">Home</a>
+            <a class="nav-link active nbo" href="login.html">Log In</a>
+           <!-- <a class="nav-link active nbo" href="#">Cart <i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a class="nav-link active nbo" href="#">Profile <i class="fa fa-user ico" aria-hidden="true"></i></a>-->
+          </div>
+        </div>
+      </nav>
+
+          <form id="login" class="col-10 col-md-6 input-area justify-content-center align-items-center">
+            <label class="col-10 col-md-6"><i class="fa fa-user ico" aria-hidden="true"></i> First Name :<br><input type="text" class="input-field" required></label>
+            <label class="col-10 col-md-5"><i class="fa fa-user ico" aria-hidden="true"></i> Last Name :<br><input type="text" class="input-field" required></label>
+            <label class="col-10 col-md-6"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email :<br><input type="email" class="input-field" required></label>
+            <label class="col-10 col-md-5"><i class="fa fa-mobile ico" aria-hidden="true"></i> Mobile :<br><input type="text" pattern="[0-9]+" class="input-field" required></label>
+            <label class="col-10 col-md-10"><i class="fa fa-address-book-o" aria-hidden="true"></i> Address :<br><input type="text" class="input-field ad" required></label>
+            <label class="col-10 col-md-6"><i class="fa fa-lock ico" aria-hidden="true"></i> Password :<br><input type="password" class="input-field" required></label>
+            <label class="col-10 col-md-5"><i class="fa fa-lock ico" aria-hidden="true"></i> Confirm Password :<br><input type="password" class="input-field" required></label>
+            <button type="submit" class="submit-btn" href="#" data-toggle="modal" data-target="#staticBackdrop">Sign Up</button> 
+        </form>
+         
+      <!--Alert Model-->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Invalid Credentials !!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			
+        <nav class="navbar navbar-expand-lg justify-content-center navbar-dark bg-dark nbt fixed-bottom">
+            <div class="navbar-brand mc-auto nt">&copy Meet Our <a class="abs" href="#">Team</a> and Follow us at </div>
+	  </nav>
+    </body>
+</html>
