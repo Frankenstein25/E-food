@@ -1,0 +1,131 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Cart Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <link rel="stylesheet" type="text/css" href="https://fontawesome.com/v4.7.0/icon/times">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="cart.css">
+        <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right nb">
+            <img class="logo justify-content-right align-items-right" src="log.jpeg">
+            <h3 class="title">FoodieMoodie</h3>
+            <button class="navbar-toggler navbar-dark justify-content-end " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-end align-items-right">
+                    <a class="nav-link active nbo" href="Home.html">Home</a>
+                    <a class="nav-link active nbo" href="#">Profile <i class="fa fa-user ico" aria-hidden="true"></i></a>
+                    <a class="nav-link active nbo" href="#">Logout</a>  
+                </div>
+            </div>
+      </nav>
+
+      <!-- Cart main items -->
+
+      <div class="row brdr">
+          <div class="back">
+              <button type="button" class="shop-back pl-2 pb-2 pt-1 pr-2 mb-4">&#x2190; Continue Shopping</button>
+          </div>
+          <h4 class="item-disp text-align-end justify-content-end">
+              Subtotal ( 3 items ) : 1680 &#x20B9;
+              <button type="button" class="check ml-4 pb-2 pt-2">Checkout</button>
+          </h4>
+            
+      </div>
+
+      <div class="row">
+          <div class="item-header">
+              <table class="headings table table-responsive-sm table-responsive-md ">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th></th>
+                        <th>Items</th>
+                        <th>Price</th>
+                        <th class="pl-5">Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name pt-5">1</td>
+                        <td><img class="image" src="food.jpg"></td>
+                        <td class="name pt-5">Pizza</td>
+                        <td class="name pt-5">30 &#x20B9;</td>
+                        <td class="name pt-5">
+                            <div class="number">
+                                <span class="minus">-</span>
+                                <input type="text" value="1"/>
+                                <span class="plus">+</span>
+                            </div>
+                        </td>
+                        <td class="name pt-5">560 &#x20B9;</td>
+                    </tr>
+                    <tr>
+                        <td class="name pt-5">2</td>
+                        <td><img class="image" src="food.jpg"></td>
+                        <td class="name pt-5">Pizza</td>
+                        <td class="name pt-5">30 &#x20B9;</td>
+                        <td class="name pt-5">
+                            <div class="number">
+                                <span class="minus">-</span>
+                                <input type="text" value="1"/>
+                                <span class="plus">+</span>
+                            </div>
+                        </td>
+                        <td class="name pt-5">560 &#x20B9;</td>
+                    </tr>
+                    <tr>
+                        <td class="name pt-5">3</td>
+                        <td><img class="image" src="food.jpg"></td>
+                        <td class="name pt-5">Pizza</td>
+                        <td class="name pt-5">30 &#x20B9;</td>
+                        <td class="name pt-5">
+                            <div class="number">
+                                <span class="minus">-</span>
+                                <input type="text" value="1"/>
+                                <span class="plus">+</span>
+                            </div>
+                        </td>
+                        <td class="name pt-5">560 &#x20B9;</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+      </div>
+			
+      <!-- Footer -->
+        <nav class="navbar navbar-expand-lg justify-content-center navbar-dark bg-dark nbt fixed-bottom">
+            <div class="navbar-brand mc-auto nt">&copy Meet Our <a class="abs" href="#">Team</a> and Follow us at &nbsp;<i class="fa fa-instagram bounce" aria-hidden="true"></i> &nbsp;&nbsp;<i class="fa fa-facebook-square bounce" aria-hidden="true"></i> &nbsp;&nbsp;<i class="fa fa-twitter-square bounce" aria-hidden="true"></i> </div>
+	    </nav>
+
+        <script>
+            	$(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+        </script>
+    </body>
+</html>

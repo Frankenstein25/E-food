@@ -1,13 +1,19 @@
+/*.brdr{
+    border:1px solid red;
+}*/
 body {
-    background-image: url("food.jpg");
+    background-image: url("bg3.jpg");
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
+
+/* Navbar and footer */
 .logo{
-    height:60px;
-    width:60px;
+    height:50px;
+    width:50px;
     border-radius:50%;
 }
 .nbo{
@@ -35,80 +41,12 @@ body {
     text-decoration: none;
     left:41%;
 }
-.sig{
+.log{
     position: relative;
-    left:40%;
-    top:-5%;
-    font-size:30px;
+    left:27%;
+    top:-6%;
+    font-size:27px;
     font-weight: 550;
-}
-.input-area{
-    position: absolute;
-    top:18%;
-    left:29%;
-	height:32vw;
-	width:45vw;
-    padding:3vw;
-    padding-top:2vw;
-    padding-left: 2.5vw;
-    align-items: right;
-    border:1.5px solid whitesmoke;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,0.8);
-    color:white;
-    font-size: 16px;
-    font-family:Roboto;
-    z-index:5;
-}
-.input-field{
-    background: transparent;
-    border:none;
-    margin-top:0.5vw;
-    margin-bottom:0.6vw;
-    border-bottom: 1px solid whitesmoke;
-    border-spacing: 0.5vw;
-    width:18vw;
-    font-size:17px;
-    color:white;
-    font-family: sans-serif;
-    outline:none;
-    font-family:Roboto;
-}
-.ad{
-    width:37.8vw;
-}
-.submit-btn{
-    position: relative;
-    left:16vw;
-    margin-top:2.5vw;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width:8vw;
-    height:auto;
-    border-radius: 3px;
-    font-size: 22px;
-    background-color:#001122;
-    color:orange;
-    border:2px solid orange;
-    outline:none;
-    font-family:Roboto;
-}
-.submit-btn:hover{
-    transform:scale(1.15);
-    background-color: #001122;
-    color:orange;
-    border:2px solid orange;
-}
-.sign{
-    text-align: center;
-    margin-top: 2vw;
-    font-size: 15px;
-}
-a.su:link{
-    text-decoration: none;
-    background:transparent;
-    color:#608cdd;
 }
 a.abs{
     text-decoration: none;
@@ -125,20 +63,126 @@ a.ft{
     font-size:18px;
 }
 
+/* Continue shopping row */
+.back{
+    position: absolute;
+    top:7vw;
+    width:100vw;
+    margin-left:1vw;
+}
+.shop-back{
+    position: relative;
+    left:3vw;
+    border:1px solid orange;
+    border-radius: 5px;
+    background-color: #001122;
+    width:17vw;
+    height:auto;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    color:orange; 
+}
+.shop-back:hover{
+    transform: scale(1.04);
+    transition: 0.25s ease-in-out;
+}
+.item-disp{
+    position: absolute;
+    color:white;
+    top:7vw;
+    right:4vw;
+}
+.check{
+    background-color: #001122;
+    color:orange;
+    border:1px solid orange;
+    width:10vw;
+    height:auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.check:hover{
+    transform: scale(1.04);
+    transition: 0.25s ease-in-out;
+}
+/* Main tables to display items */
+
+.item-header{
+    position:absolute;
+    top:12vw;
+}
+.headings{
+    width:95vw;
+    border:2px solid white;
+    margin-left:3.5vw;
+    height:3vw;
+    color:white;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    background-color: #001122;
+}
+.image{
+    position: relative;
+    height:7vw;
+    width:12vw;
+    left:3vw;
+}
+.name{
+    font-size:20px;
+}
+
+/* add subtract button */
+
+span {cursor:pointer; }
+
+.minus, .plus{
+    width:34px;
+    height:34px;
+    background:#f2f2f2;
+    border-radius:4px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color:black;
+}
+input{
+    height:34px;
+    width: 50px;
+    text-align: center;
+    font-size: 22px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    display: inline-block;
+    vertical-align: middle;
+} 
+.number{
+    position: relative;
+    left:1vw;
+}  
+
+
 /* Media Query */
 
 @media (max-width:425px){
+    .logo{
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+    }
     .nb{
         background-color: #000 !important;
         opacity: 1;
         font-size:18px;
-        z-index:3 !important;
+        z-index:10000 !important;
     }
     .nbt{
         background-color: #000 !important;
         opacity:1;
         font-size:18px;
-        z-index:0 !important;
+        z-index:10000 !important;
         bottom:0;
     }
     .nt{
@@ -147,13 +191,9 @@ a.ft{
     a.abs{
         font-size:14px;
     }
-    .logo{
-        visibility:hidden;
-    }
     .title{
         position: relative;
-        left:-40vw;
-        visibility: visible;
+        left:1vw;
         font-size: 25px;
     }
     .input-area{
@@ -165,9 +205,8 @@ a.ft{
         font-size: 18px;
         padding-left:8vw;
         padding-top:12vw;
-        z-index:5;
         scroll-margin-bottom:2vw;
-        overflow: auto;
+        z-index:0;
     }
     .input-field{
         width:50vw;
