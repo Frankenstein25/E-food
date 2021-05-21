@@ -234,11 +234,11 @@ p{
     cursor: pointer;
     color:black;
     border-radius: 50%;
-    background: #654321; /* #142850;*/
+    background-color: #654321; /* #142850;*/
     color: white;
     height:2.5vw;
     width:2.5vw;
-    outline:none;
+    outline:none !important;
     text-decoration: none;
 }
 .search_btn:hover {
@@ -290,6 +290,27 @@ p{
     transition: 0.2s ease-in;
     transition:0.2s ease-out;
 }
+.food-mod{
+    text-decoration: none !important;
+    outline:none;
+    color:black;
+}
+.food-mod:hover{
+    text-decoration: none !important;
+}
+.food-it{
+    background: transparent !important;
+    outline-offset: none !important;
+    outline: none !important;
+    border:none !important;
+}
+.end{
+    outline: none !important;
+    color:white;
+    font-size:30px;
+    font-weight: bolder;
+}
+
 .c1{
     margin-left:3.5vw;
 }
@@ -383,6 +404,84 @@ p{
     .pad{
         padding:20%;
     }
+
+    /* Main Page*/
+
+    .search_bar{
+        top:20vw;
+        height:10vw;
+    }
+    .search_btn{
+        height:7vw;
+        width:7vw;
+        top:-7vw;
+        left:1.2vw;
+
+    }
+    .carousel{
+        height:40vw;
+        width:80vw;
+        top:25vw;
+        left:9vw;
+    }
+    .carousel img{
+        height:40vw;
+        width:80vw;
+    }
+    .lcard{
+        height:40vw;
+        width:33vw;
+        top:70vw;
+        left:30%;
+    }
+    .lcard img{
+        height:40vw;
+        width:33vw;
+    }
+    .rcard{
+        height:40vw;
+        width:33vw;
+        top:30vw;
+        left:135%;
+    }
+    .rcard img{
+        height:40vw;
+        width:33vw;
+    }
+    .top{
+        margin-top:75%;
+    }
+    .type{
+        font-size:20px;
+        width:90vw;
+        left:8vw;
+    }
+    .card{
+        height:70vw;
+        width:55vw;
+        left:22%;
+        margin-top:5vw;
+    }
+    .c1{
+        left:21%;
+    }
+    .c4{
+        left:23.5%;
+    }
+    .food-item{
+        height:30vw;
+        width:55vw;
+    }
+    .cart-btn{
+        width:30vw;
+        margin-top:3vw;
+        margin-left:12vw;
+    }
+    .pad{
+        padding:10% !important;
+    }
+    
+
 }
 
 @media(max-width:385px){
@@ -392,6 +491,17 @@ p{
     }
     a.abs{
         font-size:11.7px;
+    }
+    .card{
+        height:73vw;
+    }
+    .search_btn{
+        height:7.2vw;
+        width:7.2vw;
+        top:-7.5vw;
+    }
+    .food-title{
+        font-size:18px;
     }
 }
 
@@ -417,6 +527,16 @@ p{
     }
     a.abs{
         font-size:10.5px;
+    }
+    .card{
+        height:78vw;
+    }
+    .cart-btn{
+        width:35vw;
+        margin-left:9vw;
+    }
+    .food-title{
+        font-size:16px;
     }
 }
 

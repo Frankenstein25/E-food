@@ -1,0 +1,130 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title> My Profile </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fontawesome.com/v4.7.0/icon/times">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right nb">
+        <img class="logo justify-content-right align-items-right" src="log.jpeg">
+        <h3 class="title">FoodieMoodie</h3>
+        <button class="navbar-toggler navbar-dark justify-content-end " type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify-content-end align-items-right">
+                <a class="nav-link active nbo" href="Home.html">Home</a>
+                <!-- <a class="nav-link active nbo" href="#">Cart <i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a class="nav-link active nbo" href="#">Profile <i class="fa fa-user ico" aria-hidden="true"></i></a>-->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <fieldset>
+        <div class=".col-xs-4 .col-md-offset-2 whole-bd">
+            <div class="panel panel-default panel- border rounded shadow">
+                <div class="panel-heading text-center alert alert-warning"><strong>My Profile</strong></div>
+                <div class="alert alert-success">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Success!</strong> Profile successfully saved
+                </div>
+                <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Oops!</strong> Profile not saved. Try later.
+                </div>
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                        <form>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">First Name</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" name="firstName" placeholder="First Name"
+                                        ng-model="me.firstName" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Last Name</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" name="lastName" placeholder="Last Name"
+                                        ng-model="me.lastName" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="email" name="email" placeholder="Email"
+                                        ng-model="me.email" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Phone</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="number" name="phone" placeholder="xxx-xxx-xxxx"
+                                        ng-model="me.email" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Address</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" name="address" placeholder="Address"
+                                        ng-model="me.email" readonly>
+                                </div>
+                            </div>
+                            <!--<div class="form-inline mt-2 mb-3">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button class="btn btn-info" ng-click="updateMe()">Update</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button class="btn btn-primary" ng-click="updateMe()">Save</button>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </form>
+                    </div> <!-- end form-horizontal -->
+                </div> <!-- end panel-body -->
+
+            </div> <!-- end panel -->
+
+
+        </div> <!-- end size -->
+        </fieldset>
+    </div> <!-- end container-fluid -->
+
+    <div class="pad" style="padding:3%;"></div>
+    <nav class="navbar navbar-expand-lg justify-content-center navbar-dark bg-dark nbt">
+        <div class="navbar-brand mc-auto nt">&copy Meet Our <a class="abs" href="Web_team.html">Team</a> and Follow us
+            at &nbsp;<i class="fa fa-instagram bounce" aria-hidden="true"></i> &nbsp;&nbsp;<i
+                class="fa fa-facebook-square bounce" aria-hidden="true"></i> &nbsp;&nbsp;<i
+                class="fa fa-twitter-square bounce" aria-hidden="true"></i> </div>
+    </nav>
+
+</body>
+
+</html>
