@@ -113,7 +113,7 @@ a.ft{
 .carousel{
     height:25vw;
     width:50vw;
-    left:-1.5%;
+    left:-2.5%;
     cursor:pointer;
     border-radius: 5px;
     background:#000;
@@ -156,7 +156,7 @@ p{
     border:1px solid black;
     border-radius:5px;
     background-color: white;
-    box-shadow: 4px 8px 4px 1px black;
+    box-shadow: 4px 8px 4px 2px black;
 }
 .lcard img{
     height:25vw;
@@ -164,9 +164,10 @@ p{
     border-radius: 5px;
 }
 .lcard:hover{
-    transform: scale(1.03);
+   
     transition: 0.3s ease-in;
     transition:0.5s ease-out;
+    box-shadow: none;
 }
 .rcard{
     position: absolute;
@@ -176,7 +177,7 @@ p{
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 4px 8px 4px 1px black;
+    box-shadow: 4px 8px 4px 2px black;
 }
 .rcard img{
     height:25vw;
@@ -184,9 +185,10 @@ p{
     border-radius: 5px;
 }
 .rcard:hover{
-    transform: scale(1.03);
+   
     transition: 0.3s ease-in;
     transition:0.5s ease-out;
+    box-shadow: none;
 }
 /* -----------------------------------------------------------------------------------------------------------*/
 /* Search Bar */
@@ -283,12 +285,15 @@ p{
     margin-top:2vw;
     margin-left:2.5vw;
     cursor:pointer;
-    box-shadow: 4px 8px 4px 1px black;
+    box-shadow: 3px 6px 3px 1px black;
+    border: none;
+   
 }
 .card:hover{
     transform: scale(1.03);
     transition: 0.2s ease-in;
     transition:0.2s ease-out;
+    
 }
 .food-mod{
     text-decoration: none !important;
@@ -319,7 +324,7 @@ p{
 }
 .food-item{
     height:10vw;
-    width:17.9vw;
+    width:18vw;
     border-radius:2px;
 }
 .food-title{

@@ -77,6 +77,27 @@ a.ft{
 /* Main page */
 
 .whole-bd{
-    margin-top:9%;
+    margin-top:7.5%;
     color:white;
+}
+.past-order{
+    background-color:#fff3cd ;
+    height:auto;
+    width:45vw;
+    height:30vw;
+    margin-left:-30vw;
+    overflow-y:auto;
+}
+.order-heading{
+    color:black;
+}
+.ord{
+    color:black;
+   
+}
+.date-price{
+    display: block;
+    justify-content: end;
+    align-items: right;
+    float:right;
 }
