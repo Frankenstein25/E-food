@@ -84,7 +84,8 @@ a.ft{
     background-color:#fff3cd ;
     height:auto;
     width:45vw;
-    height:30vw;
+    max-height:30vw;
+    height:auto;
     margin-left:-30vw;
     overflow-y:auto;
 }

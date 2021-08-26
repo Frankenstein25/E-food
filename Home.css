@@ -2,7 +2,7 @@
     border:1px solid red;
 }*/
 body{
-    background-image:url("bg3.jpg");
+    background-image:url("bg-8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,7 +51,7 @@ body{
     right:-1.2vw;
     left:0;
     top:0;
-    background-color: rgba(0,0,0,0.0)!important;
+    background-color: rgba(0,0,0,0.7)!important;
     z-index:100;
     font-size:18px;
     color:white;
